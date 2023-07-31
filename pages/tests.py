@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from django.test import TestCase
 
-# Create your tests here.
-=======
 from django.test import SimpleTestCase
 from django.urls import reverse
 
@@ -35,4 +31,3 @@ class AboutpageTests(SimpleTestCase):
         response = self.client.get(reverse("about"))
         self.assertTemplateUsed(response, "about.html")
 
->>>>>>> 05ddce0 (initial commit)
